@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    
+}
+.navbar-container{
+
+    background-color: rgb(237, 240, 242);
+    display: flex;
+    
+  
+}
+.navbar-container li{
+    margin: 10px 30px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:  rgb(237, 240, 242);   
+   
+}
+.navbar-container li:hover{
+    background-color:  rgb(110, 113, 115);   
+}
+
+a{
+    color: black;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.home-container{
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+.name-holder {
+    margin: 80px 30px 80px 30px;
+    text-align: center;
+}
+
+.name-holder h1{
+    padding :10px 10px 0px 10px;
+    font-size: 100px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(189, 143, 83);
+    animation-name: name-holder-animation;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes name-holder-animation {
+    from {top: 100px;}
+    to {top: 0px;}
+  }
+
+.name-holder p {
+    padding: 10px 10px 10px 10px ;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: rgb(237, 236, 237);
+    
+}
+
+.name-holder h2 {
+    padding: 50px 10px 10px 10px ;
+    font-size: 40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    color: rgb(237, 236, 237);
+    
+}
+
+
+/* home - message Section */
+.home-message{
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.home-message-left{
+    width: 50%;
+   
+}
+.message-container{  
+    color: white;
+    width: 48%;
+    height :auto;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.message-container p{
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.home-message-right{
+    width: 50%;  
+}
+.button-text{
+    color: white;
+    border : 2px solid white;
+    width: 50%;
+    height :auto;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+/* About section */
+
+.about{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.about-left{
+    width: 40%;
+    background-color: white;
+  
+}
+.image-container{
+    width: 50%;
+    height :auto;
+    padding: 20px;
+    margin: 50px auto;
+    
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    background-color:rgb(237, 240, 242);
+
+}
+.about-card{
+    
+    width: 45%;
+    
+}
+
+.about-right h1{
+    margin-top: 120px;
+    margin-bottom: 50px;
+    font-family: "Anta", sans-serif;
+    font-size: 50px;
+   
+    
+}
+
+.about-right p{
+    padding: 30px 20px 60px 20px;
+    margin: 20px auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+.name-profile{
+    text-align: center;
+}
+.name-profile h2{
+  
+    margin-bottom :10px; 
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: "Luckiest Guy", cursive;
+    font-style: normal;
+}
+
+.name-profile h4{
+    margin-bottom :40px; 
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+}
+
+
+.about-button{
+    margin-bottom: 30px;
+    background-color: black;
+    color: white;
+    padding: 20px 100px;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+   
+}
+
+.social-media{ 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 140px;
+    
+}
+
+.social-media img {
+    height: 40px;
+    margin: 10px;
+   
+}
+
+
+@media(width< 1307px){
+    .navbar-container{
+      flex-direction: column;
+     
+    }
+    .navbar-container li{
+        text-align: center;  
+       
+    }
+    .home-container h1, .name-holder h2, .about-right h1 ,.about-right p{
+        word-wrap: break-word;
+    }
+    .home-container{
+        flex-direction: column;
+    }
+    .home-message{
+        flex-direction: column;  
+        
+        
+    }
+    .home-message-left,.home-message-right{
+        width: 100%;
+        
+        
+    }
+    .message-container {
+        text-align: center;
+    }
+    .about{
+        flex-direction: column;
+        
+    }
+    .about-left, .about-right{
+        width: 100%;
+    }
+    .about-card{
+        width: 100%;
+    }
+
+    
+   
+    
+    
+}
