@@ -246,6 +246,9 @@ a{
    
      
 }
+.education-card img{
+    width: 30%;
+}
 .education-card h1{
     font-size: 45px;
     margin: 30px 20px 40px 20px;
@@ -286,7 +289,6 @@ a{
 }
 .experience-container{
     margin : 0px 20px 0px 20px;
-    /* background-color:lightcoral; */
 }
 
 .experience{
@@ -311,6 +313,123 @@ a{
     margin-top: 60px;
     font-size: 30px;
     text-align: center;
+}
+
+
+/* projects section style */
+.projects-title{
+    font-size: 45px;
+    margin: 30px 20px 40px 20px;
+    text-align: center;
+    color: white;
+    background-color: #737373;
+    margin: 0px;
+    padding: 40px;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+}
+.projects-left, .projects-right{
+    background-color: #f4f1eb;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.project-card{
+   margin: 50px 150px;
+   padding: 20px;
+   
+   text-align: center;
+}
+.project-card h1{
+    padding: 20px;
+}
+.project-card h3{
+    padding-bottom: 20px;
+}
+
+.tech-card{
+    text-align: center;
+    margin: 50px 30px 0px 30px;
+}
+.tech-card h4{
+    padding-bottom: 5px;
+}
+
+.tech-card p{
+    padding-bottom: 20px;
+}
+
+.roles-responsibilities{
+    text-align: center;
+    margin: 0px 30px;
+}
+.roles-responsibilities h4{
+    padding-bottom: 10px;
+}
+
+.skills-title{
+    text-align: center;
+    font-size: 45px;
+    margin: 30px 20px 40px 20px;
+    text-align: center;
+    margin: 0px;
+    padding: 40px;
+    background-color: #f4f1eb;
+}
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #f4f1eb;
+    
+}
+.skills-cards{
+    width: 20%;
+    margin: 20px;
+    text-align: center;
+}
+.skills-cards img{
+    width : 100%;
+}
+
+.skills-cards h3{
+   padding: 10px;
+}
+
+.contacts{
+    background-color: black;
+    color: white;
+    padding: 100px;
+}
+
+.contacts h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+.contacts h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-top: 65px;
+}
+.contacts h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.contacts h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 60px;
+}
+.contacts a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+   
 }
 
 
@@ -360,9 +479,17 @@ a{
     .education-section, .experience-section{
         width: 100%;
     }
-   
-    
-   
-    
-    
+    .projects{
+        flex-direction: column;
+    }
+    .projects-left, .projects-right{
+        width: 100%;
+    }
+    .project-card{
+        margin : 50px 0px;
+    }
+    .tech-card{
+        text-align: center;
+    }
+ 
 }
