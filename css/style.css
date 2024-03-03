@@ -213,7 +213,7 @@ a{
 .social-media{ 
     display: flex;
     justify-content: space-evenly;
-    margin: 0px 140px;
+    margin: 0px 140px 10px 140px;
     
 }
 
@@ -222,6 +222,97 @@ a{
     margin: 10px;
    
 }
+
+
+/* education- experience section style */
+
+.education-experience{
+    display: flex;
+    
+
+}
+
+.education-section{
+    width: 40%;
+    background-color: #f4f1eb;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.education-card{
+    width: 80%;
+    margin: 15%;
+    padding: 20px;   
+   
+     
+}
+.education-card h1{
+    font-size: 45px;
+    margin: 30px 20px 40px 20px;
+   
+}
+.education-card h4{
+    margin: 30px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.education-card h3{
+    margin: 30px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.experience-section{
+    width : 60%;
+    background-color: #f4f1eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    
+}
+
+
+.experience-card{
+   
+    width: 80%;
+    margin: 20px auto;
+    margin-bottom: 10%; 
+    border-left: 3px solid black;    
+}
+
+.experience-card h5{
+    margin: 20px;
+    font-size: 30px;
+}
+.experience-container{
+    margin : 0px 20px 0px 20px;
+    /* background-color:lightcoral; */
+}
+
+.experience{
+    margin-bottom: 50px; 
+ 
+}
+
+.experience h3{
+    margin: 10px 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(32, 32, 32);
+    font-style: italic;
+}
+.experience ul{
+   margin: 30px 0px;
+}
+.experience li{
+    margin: 5px 0px;
+ }
+
+.experience-title{
+    margin-top: 60px;
+    font-size: 30px;
+    text-align: center;
+}
+
 
 
 @media(width< 1307px){
@@ -262,7 +353,14 @@ a{
     .about-card{
         width: 100%;
     }
-
+    .education-experience{
+        flex-direction: column;
+        
+    }
+    .education-section, .experience-section{
+        width: 100%;
+    }
+   
     
    
     
